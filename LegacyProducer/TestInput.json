@@ -1,0 +1,35 @@
+{
+  "LegacyEvents": [
+    {
+      "WorkflowId": "1",
+      "Type": "PaymentPreAuth",
+      "KeyType": "preauthId",
+      "KeyValue": 1
+    },
+    {
+      "WorkflowId": "1",
+      "Type": "PaymentAuthorized",
+      "KeyType": "TransactionId",
+      "KeyValue": 1
+    },
+    {
+      "WorkflowId": "1",
+      "Type": "ParkingSessionStarted",
+      "KeyType": "LotVehiclePaidId",
+      "KeyValue": 1
+    },
+    {
+      "WorkflowId": "2",
+      "Type": "ParkingSessionExtended",
+      "KeyType":  "LotVehiclePaidId",
+      "KeyValue": 1
+    },
+    {
+      "WorkflowId": "3",
+      "Type": "ParkingSessionCanceled",
+      "KeyType":  "LotVehiclePaid",
+      "KeyValue": 1
+    }
+  ]
+}
+
