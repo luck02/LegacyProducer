@@ -1,0 +1,48 @@
+PREFIX: 2015/03/07 23:01:26 client.go:37: Initializing new client
+PREFIX: 2015/03/07 23:01:26 client.go:488: Fetching metadata for all topics from broker localhost:9092
+PREFIX: 2015/03/07 23:01:26 broker.go:83: Connected to broker localhost:9092
+PREFIX: 2015/03/07 23:01:26 client.go:77: Successfully initialized new client
+PREFIX: 2015/03/07 23:01:26 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/07 23:01:26 producer.go:211: Producer shutting down.
+PREFIX: 2015/03/07 23:01:26 client.go:503: Some partitions are leaderless, waiting 250ms for election... (3 retries remaining)
+PREFIX: 2015/03/07 23:01:26 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/07 23:01:26 client.go:548: Registered new broker #9092 at 192.168.1.80:9092
+PREFIX: 2015/03/07 23:01:26 producer.go:473: producer/flusher/9092 starting up
+PREFIX: 2015/03/07 23:01:26 broker.go:83: Connected to broker 192.168.1.80:9092
+PREFIX: 2015/03/07 23:01:27 producer.go:569: producer/flusher/9092 shut down
+PREFIX: 2015/03/07 23:01:27 client.go:96: Closing Client
+:32 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:32 client.go:499: Some partitions are leaderless, but we're out of retries
+PREFIX: 2015/03/06 23:01:32 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:32 client.go:503: Some partitions are leaderless, waiting 250ms for election... (3 retries remaining)
+PREFIX: 2015/03/06 23:01:32 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:32 client.go:503: Some partitions are leaderless, waiting 250ms for election... (2 retries remaining)
+PREFIX: 2015/03/06 23:01:33 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:33 client.go:503: Some partitions are leaderless, waiting 250ms for election... (1 retries remaining)
+PREFIX: 2015/03/06 23:01:33 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:33 client.go:499: Some partitions are leaderless, but we're out of retries
+PREFIX: 2015/03/06 23:01:33 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:33 client.go:503: Some partitions are leaderless, waiting 250ms for election... (3 retries remaining)
+PREFIX: 2015/03/06 23:01:33 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:33 client.go:503: Some partitions are leaderless, waiting 250ms for election... (2 retries remaining)
+PREFIX: 2015/03/06 23:01:34 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:34 client.go:503: Some partitions are leaderless, waiting 250ms for election... (1 retries remaining)
+PREFIX: 2015/03/06 23:01:34 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:34 client.go:499: Some partitions are leaderless, but we're out of retries
+PREFIX: 2015/03/06 23:01:34 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:34 client.go:503: Some partitions are leaderless, waiting 250ms for election... (3 retries remaining)
+PREFIX: 2015/03/06 23:01:34 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:34 client.go:503: Some partitions are leaderless, waiting 250ms for election... (2 retries remaining)
+PREFIX: 2015/03/06 23:01:34 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:34 client.go:503: Some partitions are leaderless, waiting 250ms for election... (1 retries remaining)
+PREFIX: 2015/03/06 23:01:35 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:35 client.go:499: Some partitions are leaderless, but we're out of retries
+PREFIX: 2015/03/06 23:01:35 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:35 client.go:503: Some partitions are leaderless, waiting 250ms for election... (3 retries remaining)
+PREFIX: 2015/03/06 23:01:35 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:35 client.go:503: Some partitions are leaderless, waiting 250ms for election... (2 retries remaining)
+PREFIX: 2015/03/06 23:01:35 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:35 client.go:503: Some partitions are leaderless, waiting 250ms for election... (1 retries remaining)
+PREFIX: 2015/03/06 23:01:35 client.go:486: Fetching metadata for [LegacyEvents] from broker localhost:9092
+PREFIX: 2015/03/06 23:01:35 client.go:499: Some partitions are leaderless, but we're out of retries
+PREFIX: 2015/03/06 23:01:35 client.go:96: Closing Client
