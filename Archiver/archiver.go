@@ -37,7 +37,7 @@ func main() {
 	}()
 
 	msgCount := 0
-	legacyEventChannel := make(chan string)
+	legacyEventChannel := make(chan *sarama.ConsumerMessage)
 	go WriteArchiveLog(legacyEventChannel)
 
 consumerLoop:
@@ -58,7 +58,7 @@ consumerLoop:
 
 }
 
-func WriteArchiveLog(legacyEventChannel chan string) {
+func WriteArchiveLog(legacyEventChannel chan *sarama.ConsumerMessage) {
 	for {
 		select {
 		case msg := <-legacyEventChannel:
@@ -68,13 +68,16 @@ func WriteArchiveLog(legacyEventChannel chan string) {
 	}
 }
 
-func FormatAndArchiveMessage(messageString string) {
+func FormatAndArchiveMessage(message *sarama.ConsumerMessage) {
 	file, err := os.Create("./archive")
 	if err != nil {
 		panic(err)
 	}
 
-	_, err = file.WriteString(messageString)
+	key := string(message.Key[:])
+	value := string(message.Value[:])
+
+	_, err = file.WriteString(key + ":" + value + "\n")
 
 	if err != nil {
 		panic(err)
