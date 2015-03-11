@@ -69,7 +69,7 @@ func WriteArchiveLog(legacyEventChannel chan *sarama.ConsumerMessage) {
 }
 
 func FormatAndArchiveMessage(message *sarama.ConsumerMessage) {
-	file, err := os.Create("./archive")
+	file, err := os.OpenFile("archive", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
 	if err != nil {
 		panic(err)
 	}
