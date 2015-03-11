@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/Shopify/sarama"
@@ -36,6 +37,8 @@ func main() {
 	}()
 
 	msgCount := 0
+	legacyEventChannel := make(chan string)
+	go WriteArchiveLog(legacyEventChannel)
 
 consumerLoop:
 	for {
@@ -45,6 +48,7 @@ consumerLoop:
 		case mesg := <-consumer.Messages():
 			msgCount++
 			fmt.Println(mesg)
+			legacyEventChannel <- mesg
 		case <-time.After(5 * time.Second):
 			fmt.Println("> timed out")
 			break consumerLoop
@@ -52,4 +56,27 @@ consumerLoop:
 	}
 	fmt.Println("Got: ", msgCount, " messages.")
 
+}
+
+func WriteArchiveLog(legacyEventChannel chan string) {
+	for {
+		select {
+		case msg := <-legacyEventChannel:
+			FormatAndArchiveMessage(msg)
+		default:
+		}
+	}
+}
+
+func FormatAndArchiveMessage(messageString string) {
+	file, err := os.Create("./archive")
+	if err != nil {
+		panic(err)
+	}
+
+	_, err = file.WriteString(messageString)
+
+	if err != nil {
+		panic(err)
+	}
 }
